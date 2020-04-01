@@ -10,7 +10,7 @@
     info.update = function (props) {
 
       this._div.innerHTML = '<h4>Dados da cidade: </h4>' + (props ?
-        '<b>' + props.nome + '</b><br/><br/>' + 'População: ' + props.populacao.toLocaleString('pt-BR') + '<br/><br/>' + 'PIB: ' + props.pib.toLocaleString('pt-BR') + '<br/><br/>' + 'Região: ' + props.regiao + '<br/><br/>' + 'Valor: R$ ' + props.valorNF.toLocaleString('pt-BR'): 'Passe o mouse sobre a cidade');
+        '<b>' + props.nome + '</b><br/><br/>' + 'População: ' + props.populacao.toLocaleString('pt-BR') + '<br/><br/>' + 'PIB: R$ ' + props.pib.toLocaleString('pt-BR') + '<br/><br/>' + 'Região: ' + props.regiao + '<br/><br/>' + 'Valor NF: R$ ' + props.valorNF.toLocaleString('pt-BR'): 'Passe o mouse sobre a cidade');
       };
 
     info.addTo(map);
