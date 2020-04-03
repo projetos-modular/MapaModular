@@ -17,7 +17,7 @@ function paragraph(label, container) {
 }
 
 function selectRoutes(container) {
-  var rotas = infoRotas.rotasCanoasRS;
+  var rotas = infoRotas.rotas;
   var select = L.DomUtil.create('select', '', container);
   select.setAttribute('class', 'spacing');
   var option = L.DomUtil.create('option');
@@ -31,9 +31,10 @@ function selectRoutes(container) {
     select.addEventListener('change', () => {
       var infoPrazo = document.querySelector('#prazo');
       var valor = select.options[select.selectedIndex].text;
+      var plural = prazo > 1 ? 'dias' : 'dia';
       for (var i = valor; i == rota; i++) {
         infoPrazo.setAttribute('class', 'gap');
-        infoPrazo.innerHTML = `O prazo de entrega para a rota: ${valor} é: ${prazo}`;
+        infoPrazo.innerHTML = `O prazo de entrega para a rota: ${valor} é: ${prazo} ${plural}`;
       }
     });
   });
