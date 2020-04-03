@@ -2,11 +2,19 @@
     body {
       height: 100%;
       margin: 0;
+      background-color: #78bced;
     }
     #map {
       width: 100vw;
-      height: 100vh;
+      height: 85vh;
     }
+
+    #prazo{
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
     .info {
       padding: 6px 8px;
       font: 14px/16px Arial, Helvetica, sans-serif;
