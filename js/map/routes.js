@@ -46,7 +46,7 @@ var control = L.Routing.control({
   plan: new (L.Routing.Plan.extend({
     createGeocoders: function() {
       var container = L.Routing.Plan.prototype.createGeocoders.call(this),
-        reverseButton = button('&#8593;&#8595;', container);
+      reverseButton = button('&#8593;&#8595;', container);
       infoEntrega = paragraph('Selecione a Rota:', container);
       prazoEntrega = selectRoutes(container);
 
