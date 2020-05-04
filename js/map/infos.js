@@ -22,6 +22,7 @@
         ' Kg' + '<br/><br/>' + 'Cubagem: ' + props.cubagem.toLocaleString('pt-BR') + 
         '<br/><br/>' + 'PIB: R$ ' + props.pib.toLocaleString('pt-BR') + 
         '<br/><br/>' + 'População: ' + props.populacao.toLocaleString('pt-BR') + 
+        '<br/><br/>' + 'População 2: ' + props.populacao.toLocaleString('pt-BR') +                                                    
         '<br/><br/>' : 'Passe o mouse sobre a cidade');
       };
 
